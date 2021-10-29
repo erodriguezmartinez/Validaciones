@@ -1,0 +1,57 @@
+/*Esperanza Rodríguez Martínez*/
+
+span
+{
+	margin-left:14%;
+}
+main
+{
+	border:3px black solid;
+	padding:30px;
+	margin-top:30px;
+	margin-bottom:30px;
+	margin-left:9%;
+	width:75%;
+	background-image:url(imagenes/fondo.jpg);
+
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: 0 3px 3px #ccc;
+	-moz-box-shadow: 0 3px 3px #ccc;
+	box-shadow: 0 3px 3px #ccc;
+}
+input,select
+{
+	margin-top:10px;
+	border:1px solid black;
+	font-size:medium;
+	size:30;
+	display: block;
+	margin-bottom:10px;
+}
+input[type="radio"],input[type="checkbox"]
+{
+	display: inline;
+}
+form input
+{
+	font-size:large;
+}
+label,#solicitar
+{
+	font-weight:bold;
+	font-size:x-large;
+}
+#solicitar
+{
+	width:200px ;
+	height:50px;
+	font-size:25px;
+	margin: 0 auto;
+}
+
+.error
+{
+	border:1px solid red;
+}

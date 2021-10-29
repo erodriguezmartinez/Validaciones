@@ -1,0 +1,73 @@
+<!--Esperanza Rodríguez Martínez-->
+<!--FORMULARIO-->
+<html>
+	<head>
+		<title>Ejercicio Validaciones</title>
+		<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" "ISO-8859-1">
+		<meta name=author content=erodriguezmartinez.guadalupe@alumnado.fundacionloyola.net />
+		<meta name=description content='Ejercicio Validaciones' />
+		<meta name=keywords content='Ejercicio Validaciones' />
+		<link href="EstiloGeneral.css" rel="stylesheet" type="text/css">
+		<link href="EstiloFormulario.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!--TÍTULO-->
+		<header>Validaciones</header>
+		<!--MENÚ DE NAVEGACIÓN-->
+		<nav>
+
+		</nav>
+		<!--CUERPO DE LA PÁGINA-->
+		<div id="divErrores">
+
+		</div>
+		<main>
+			<form>
+				<!--DATOS PERSONALES-->
+				<label>Nombre completo:</label>
+				<input type="text" name="nombre" id="nombre" placeholder="Nombre" pattern="[A-Z]{1}[a-z]{2,20}" maxlength="20" required/>
+				<label>Apellidos:</label>
+				<input type="text" name="apellidos" id="apellidos" placeholder="Apellidos" maxlength="40" />
+				<label>DNI:</label>
+				<input type="text" name="DNI" id="dni" pattern="\d{8}[A-Za-z]" placeholder="DNI" maxlength="9" required/> <!--pattern="[0-9]{8}[A-Za-z]"-->
+				<label>Edad:</label>
+				<input type="number" name="edad" min="18" max="99" step="1" required>
+				<label>Comunidad</label>
+				<select name="comunidad" id="comunidades" >
+					<opt group label="comunidades">
+					<option value="" selected hidden>--Seleccione una comunidad--</option>
+					<option value="Madrid">Madrid</option>
+					<option value="Andalucia">Andalucía</option>
+					<option value="Extremadura" id="extremadura">Extremadura</option>
+					<option value="Galicia">Galicia</option>
+					<option value="Murcia">Murcia</option>
+					<option value="Comunidad Valenciana">Comunidad Valenciana</option>
+					<option value="Navarra">Navarra</option>
+					<option value="Baleares">Baleares</option>
+					<option value="Canarias">Canarias</option>
+					<option value="Asturias">Asturias</option>
+				</select>
+
+				<label id="brocoli">¿Me gusta el brócoli?
+				<input type="radio" name="check" class="eleccion" value="Sí" id="si" />
+				Sí
+				<input type="radio" name="check" class="eleccion" value="No" id="no" />
+				No
+				<br /><br />
+				<label>Correo:</label>
+				<input type="email" name="correo" placeholder="ejemplo@gmail.com" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required/>
+				<label>Teléfono:</label>
+				<input type="tel" name="telefono" maxlength="9" pattern="[0-9]{9}" required>
+				<label><input type="checkbox" id="iPolitica" value="checkbox">Acepta política de Privacidad</label><br />
+				<div>
+					<input type="submit" name="enviar" id="solicitar" value="Enviar">
+				</div>
+			</form>
+		</main>
+		<footer>
+			Panel de Administración
+		</footer>
+
+		  <script src="js/validaciones.js"></script>
+	</body>
+</html>
